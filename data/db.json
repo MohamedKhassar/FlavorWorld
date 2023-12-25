@@ -4,6 +4,7 @@
             "id": 1,
             "dishType": "Appetizer",
             "name": "Caprese Salad",
+            "image": "caprese_salad.jpg",
             "ingredients": [
                 "2 large tomatoes, sliced",
                 "8 ounces fresh mozzarella, sliced",
@@ -22,6 +23,7 @@
             "id": 2,
             "dishType": "Main Course",
             "name": "Chicken Alfredo Pasta",
+            "image": "chicken_alfredo_pasta.jpg",
             "ingredients": [
                 "8 ounces fettuccine pasta",
                 "2 tablespoons butter",
@@ -43,6 +45,7 @@
             "id": 3,
             "dishType": "Dessert",
             "name": "Strawberry Shortcake",
+            "image": "strawberry_shortcake.jpg",
             "ingredients": [
                 "2 cups sliced strawberries",
                 "1/4 cup granulated sugar",
@@ -69,6 +72,7 @@
             "id": 4,
             "dishType": "Appetizer",
             "name": "Bruschetta",
+            "image": "bruschetta.jpg",
             "ingredients": [
                 "4 large tomatoes, diced",
                 "1/4 cup fresh basil, chopped",
@@ -88,6 +92,7 @@
             "id": 5,
             "dishType": "Main Course",
             "name": "Vegetarian Stir-Fry",
+            "image": "vegetarian_stir_fry.jpg",
             "ingredients": [
                 "2 cups broccoli florets",
                 "1 red bell pepper, sliced",
@@ -112,6 +117,7 @@
             "id": 6,
             "dishType": "Dessert",
             "name": "Lemon Bars",
+            "image": "lemon_bars.jpg",
             "ingredients": [
                 "1 cup all-purpose flour",
                 "1/2 cup powdered sugar",
@@ -138,6 +144,7 @@
             "id": 7,
             "dishType": "Main Course",
             "name": "Mushroom Risotto",
+            "image": "mushroom_risotto.jpg",
             "ingredients": [
                 "1 cup Arborio rice",
                 "4 cups vegetable broth",
@@ -166,6 +173,7 @@
             "id": 8,
             "dishType": "Dessert",
             "name": "Apple Pie",
+            "image": "apple_pie.jpg",
             "ingredients": [
                 "6 cups peeled, sliced apples (such as Granny Smith)",
                 "3/4 cup granulated sugar",
@@ -192,6 +200,7 @@
             "id": 9,
             "dishType": "Appetizer",
             "name": "Spinach and Artichoke Dip",
+            "image": "spinach_artichoke_dip.jpg",
             "ingredients": [
                 "1 cup frozen chopped spinach, thawed and drained",
                 "1 cup canned artichoke hearts, drained and chopped",
@@ -215,6 +224,7 @@
             "id": 10,
             "dishType": "Main Course",
             "name": "Shrimp Scampi",
+            "image": "shrimp_scampi.jpg",
             "ingredients": [
                 "1 pound large shrimp, peeled and deveined",
                 "8 ounces linguine or spaghetti",
