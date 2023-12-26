@@ -4,7 +4,7 @@
             "id": 1,
             "dishType": "Appetizer",
             "name": "Caprese Salad",
-            "image": "caprese_salad.jpg",
+            "image": "../src/assets/img/caprese_salad.jpg",
             "ingredients": [
                 "2 large tomatoes, sliced",
                 "8 ounces fresh mozzarella, sliced",
@@ -23,7 +23,7 @@
             "id": 2,
             "dishType": "Main Course",
             "name": "Chicken Alfredo Pasta",
-            "image": "chicken_alfredo_pasta.jpg",
+            "image": "../src/assets/img/chicken_alfredo_pasta.jpg",
             "ingredients": [
                 "8 ounces fettuccine pasta",
                 "2 tablespoons butter",
