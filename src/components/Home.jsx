@@ -1,6 +1,21 @@
+import AOS from "aos"
+import "aos/dist/aos.css"
+import { useEffect } from "react";
 const Home = () => {
+    useEffect(() => {
+        AOS.init({
+            offset: 200,
+            duration: 600,
+            easing: 'ease-in-sine',
+            delay: 100,
+        });
+    }, [])
     return (
-        <div className="flex justify-center">
+        <div className="container m-14 flex justify-center items-center gap-12 flex-col text-center" data-aos="fade-up">
+            <div className="flex justify-center items-center gap-2 flex-col" >
+                <h1 className="text-4xl capitalize">recipes by category</h1>
+                <hr className="border border-blue-950 w-full" />
+            </div>
             <div className="capitalize flex gap-x-20 items-center">
                 <div className="overflow-hidden rounded-lg h-fit p-8 cursor-pointer w-min shadow-md shadow-slate-400 bg-[url('/img/bg.jpg')] bg-cover hover:scale-110 transition-all delay-100">
                     <div className="w-24">
@@ -14,7 +29,7 @@ const Home = () => {
                     </div>
                     <p className="text-nowrap font-bold text-slate-800">main course</p>
                 </div>
-                <div className="overflow-hidden rounded-lg h-fit p-8 cursor-pointer w-min shadow-md shadow-slate-400 bg-[url('/img/bg.jpg')] bg-cover hover:scale-110 transition-all delay-100">
+                <div className="overflow-hidden rounded-lg h-fit p-8 cursor-pointer w-min shadow-md shadow-slate-400 bg-[url('/img/bg.jpg')] bg-cover hover:scale-110 transition-all delay-100 text-center">
                     <div className="w-24">
                         <img src="/img/Dessert.png" alt="" />
                     </div>
