@@ -23,7 +23,7 @@ const Home = () => {
                         Minus sed minima praesentium assumenda, nulla fugit consequuntur, iusto laboriosam cumque odio ex aliquam voluptatum dignissimos quasi perferendis. Laudantium obcaecati non ipsum minima aliquam blanditiis asperiores quo dicta accusamus dolorem.</p>
                 </div>
             </header>
-
+            {/* Mohamed Khassar Section */}
             <div className="container m-14 flex justify-center items-center gap-12 flex-col text-center" data-aos="fade-up">
                 <div className="flex justify-center items-center gap-2 flex-col" >
                     <h1 className="text-4xl capitalize">recipes by category</h1>
