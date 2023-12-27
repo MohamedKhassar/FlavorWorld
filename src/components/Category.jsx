@@ -25,7 +25,7 @@ const Category = () => {
                         <p className="text-nowrap font-bold text-slate-800">main course</p>
                     </div>
                 </Link>
-                <Link to="dish/Dessert">
+                <Link to="dish/dessert">
                     <div className="overflow-hidden rounded-lg h-fit p-8 cursor-pointer w-min shadow-md shadow-slate-400 bg-[url('/img/bg.jpg')] bg-cover hover:scale-110 transition-all delay-100 text-center">
                         <div className="w-24">
                             <img src="/img/Dessert.png" alt="" />

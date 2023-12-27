@@ -5,6 +5,7 @@ import Dish from "./pages/Dish"
 import Welcome from "./components/Welcome"
 import { useEffect } from "react"
 import Aos from "aos"
+import Plate from "./pages/Plate"
 export default function App() {
   useEffect(() => {
     Aos.init({
@@ -20,6 +21,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/dish/:type" element={<Dish/>}/>
+          <Route path="/:id" element={<Plate/>}/>
         </Routes>
     </BrowserRouter>
   )
