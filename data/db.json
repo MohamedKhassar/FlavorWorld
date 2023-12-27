@@ -2,7 +2,7 @@
     "recipes": [
         {
             "id": 1,
-            "dishType": "Appetizer",
+            "dishType": "appetizer",
             "name": "Caprese Salad",
             "image": "../src/assets/img/caprese_salad.jpg",
             "ingredients": [
@@ -21,7 +21,7 @@
         },
         {
             "id": 2,
-            "dishType": "Main Course",
+            "dishType": "main",
             "name": "Chicken Alfredo Pasta",
             "image": "../src/assets/img/chicken_alfredo_pasta.jpg",
             "ingredients": [
@@ -43,7 +43,7 @@
         },
         {
             "id": 3,
-            "dishType": "Dessert",
+            "dishType": "dessert",
             "name": "Strawberry Shortcake",
             "image": "strawberry_shortcake.jpg",
             "ingredients": [
@@ -70,7 +70,7 @@
         },
         {
             "id": 4,
-            "dishType": "Appetizer",
+            "dishType": "appetizer",
             "name": "Bruschetta",
             "image": "bruschetta.jpg",
             "ingredients": [
@@ -90,7 +90,7 @@
         },
         {
             "id": 5,
-            "dishType": "Main Course",
+            "dishType": "main",
             "name": "Vegetarian Stir-Fry",
             "image": "vegetarian_stir_fry.jpg",
             "ingredients": [
@@ -115,7 +115,7 @@
         },
         {
             "id": 6,
-            "dishType": "Dessert",
+            "dishType": "dessert",
             "name": "Lemon Bars",
             "image": "lemon_bars.jpg",
             "ingredients": [
@@ -142,7 +142,7 @@
         },
         {
             "id": 7,
-            "dishType": "Main Course",
+            "dishType": "main",
             "name": "Mushroom Risotto",
             "image": "mushroom_risotto.jpg",
             "ingredients": [
@@ -171,7 +171,7 @@
         },
         {
             "id": 8,
-            "dishType": "Dessert",
+            "dishType": "dessert",
             "name": "Apple Pie",
             "image": "apple_pie.jpg",
             "ingredients": [
@@ -198,7 +198,7 @@
         },
         {
             "id": 9,
-            "dishType": "Appetizer",
+            "dishType": "appetizer",
             "name": "Spinach and Artichoke Dip",
             "image": "spinach_artichoke_dip.jpg",
             "ingredients": [
@@ -222,7 +222,7 @@
         },
         {
             "id": 10,
-            "dishType": "Main Course",
+            "dishType": "main",
             "name": "Shrimp Scampi",
             "image": "shrimp_scampi.jpg",
             "ingredients": [

@@ -4,14 +4,17 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "concurrently \"yarn:dev\" \"npm:api\"",
+    "api": "json-server --watch ./data/db.json",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "start": "json-server --watch ./data/db.json",
     "preview": "vite preview"
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "axios": "^1.6.3",
+    "concurrently": "^8.2.2",
     "json-server": "^0.17.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
