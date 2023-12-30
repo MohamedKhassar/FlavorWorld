@@ -7,7 +7,6 @@ const Category = () => {
                 <h1 className="text-4xl capitalize">recipes by category</h1>
                 <hr className="border border-blue-950 w-full" />
             </div>
-
             <div className="capitalize flex gap-x-20 items-center">
                 <Link to="dish/appetizer">
                     <div className="overflow-hidden rounded-lg h-fit p-8 cursor-pointer w-min shadow-md shadow-slate-400 bg-[url('/img/bg.jpg')] bg-cover hover:scale-110 transition-all delay-100">

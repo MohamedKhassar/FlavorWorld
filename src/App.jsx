@@ -2,10 +2,10 @@ import { BrowserRouter , Routes , Route } from "react-router-dom"
 import "./App.css"
 import Home from "./pages/Home"
 import Dish from "./pages/Dish"
-import Welcome from "./components/Welcome"
 import { useEffect } from "react"
 import Aos from "aos"
 import Plate from "./pages/Plate"
+import NavBar from "./components/NavBar"
 export default function App() {
   useEffect(() => {
     Aos.init({
@@ -17,9 +17,10 @@ export default function App() {
 }, [])
   return (
     <BrowserRouter>
-            <Welcome />
+      <NavBar/>
         <Routes>
-          <Route path="/" element={<Home/>}/>
+          <Route path="/" exact element={<Home/>}/>
+          <Route path="/all-plates" exact element={<h1>hi</h1>}/>
           <Route path="/dish/:type" element={<Dish/>}/>
           <Route path="/:id" element={<Plate/>}/>
         </Routes>
