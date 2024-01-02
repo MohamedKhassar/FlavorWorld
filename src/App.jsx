@@ -6,6 +6,7 @@ import { useEffect } from "react"
 import Aos from "aos"
 import Plate from "./pages/Plate"
 import NavBar from "./components/NavBar"
+import GetPlates from "./pages/GetPlates"
 export default function App() {
   useEffect(() => {
     Aos.init({
@@ -20,7 +21,7 @@ export default function App() {
       <NavBar/>
         <Routes>
           <Route path="/" exact element={<Home/>}/>
-          <Route path="/all-plates" exact element={<h1>hi</h1>}/>
+          <Route path="/all-plates" exact element={<GetPlates />}/>
           <Route path="/dish/:type" element={<Dish/>}/>
           <Route path="/:id" element={<Plate/>}/>
         </Routes>

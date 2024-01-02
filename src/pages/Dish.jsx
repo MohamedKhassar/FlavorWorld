@@ -19,30 +19,23 @@ const Dish = () => {
     }, [dish])
 
     return (
-        <div className="container m-32 flex gap-12 flex-col text-center" data-aos="fade-up">
-            <div className='w-fit flex flex-col gap-2'>
+        <div className="m-14 text-center" data-aos="fade-up">
+            <div className='w-fit flex flex-col gap-2 my-28'>
                 <h1 className="text-4xl capitalize">{dish} plates</h1>
                 <hr className="border border-blue-950 w-full" />
             </div>
-            {dishData.map((data, i) =>
-                <div key={i} className='w-[200px] h-min cursor-pointer hover:scale-105 transition-all bg-[#FFF6E2] rounded-lg shadow-slate-500 shadow flex flex-col gap-y-12'>
-                    <img src={data.image} className='w-56 h-56 rounded-t-lg' alt="" />
-                    <div className='flex flex-col gap-10 p-8 w-max'>
-                        <h1 className='text-3xl text-start'>{data.name}</h1>
-                        <p className=''>{data.instructions.slice(0, 1).map((ins, i) =>
-                            <>
-                                <li className='text-center' key={i}>{ins}</li>
-                                <Link to={`/${data.id}`}>
-                                    <li className='w-fit list-none mt-3 text-white p-2 bg-slate-600 rounded-md' >
-                                        {data.instructions.length > 1 ? "Read more" : ""}
-                                    </li>
-                                </Link>
-                            </>
-                        )}</p>
-                    </div>
-                </div>
-            )}
-
+            <div className="flex gap-24 justify-center items-center">
+                {dishData.map(data =>
+                    <Link to={`/${data.id}`} key={data.id}>
+                        <div className="rounded-md w-96 flex flex-col gap-y-5 bg-[#FFF6E2] p-5 shadow-md hover:scale-105 transition-all duration-300 hover:cursor-pointer">
+                            <img src={data.image} alt="" className="w-96 h-60 object-cover rounded-md" />
+                            <p className="capitalize text-start"><b>name : </b>{data.name}</p>
+                            <p className="capitalize text-start"><b>category : </b>{data.dishType}</p>
+                            <p className="capitalize text-start"><b>description :<br /><br /> </b>{data.desc}</p>
+                        </div>
+                    </Link>
+                )}
+            </div>
         </div>
     );
 }

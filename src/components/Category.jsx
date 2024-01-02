@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Category = () => {
     return (
-        <div className="container m-14 flex justify-center items-center gap-12 flex-col text-center" data-aos="fade-up">
+        <div className="m-14 flex justify-center items-center gap-12 flex-col text-center" data-aos="fade-up">
             <div className="flex justify-center items-center gap-2 flex-col" >
                 <h1 className="text-4xl capitalize">recipes by category</h1>
                 <hr className="border border-blue-950 w-full" />

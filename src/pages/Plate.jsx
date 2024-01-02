@@ -1,10 +1,11 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 const Plate = () => {
     const id = useParams().id
     const [plate, setPlate] = useState({})
+    const nav = useNavigate()
     useEffect(() => {
         const getOne = async () => {
             try {
@@ -17,15 +18,29 @@ const Plate = () => {
         }
         getOne()
     }, [id])
-    console.log(plate)
+
+    const handelDelete = () => {
+        const confirmDelete = window.confirm('Are you sure to delete this plate?')
+        if (confirmDelete) {
+            axios.delete(`http://localhost:3000/recipes/${id}`).then(nav("/all-plates"))
+        }
+    }
+
     return (
-        <div className="my-32 flex" data-aos="fade-up">
+        <div className="my-32" data-aos="fade-up">
             <div className="flex justify-around">
-                <img src={plate.image} className="w-1/3 rounded-md h-fit my-14" alt="" />
+                <div>
+                    <img src={plate.image} className="w-96 object-cover rounded-md h-96 my-14" alt="" />
+                    <div>
+                        <button className="bg-red-500 hover:bg-red-600 p-2 rounded capitalize" onClick={handelDelete}>
+                            delete
+                        </button>
+                    </div>
+                </div>
                 <div className="flex flex-col gap-10">
-                    <div className="flex justify-center items-center gap-2 flex-col" >
-                        <h1 className="text-nowrap text-center text-4xl">{plate.name}</h1>
-                        <hr className="border border-blue-950 w-min" />
+                    <div className="w-fit grid gap-y-2" >
+                        <h1 className="text-nowrap text-center text-4xl font-bold">{plate.name}</h1>
+                        <hr className="border border-blue-950 w-full" />
                     </div>
 
                     <ul className="text-start flex flex-col gap-5">
