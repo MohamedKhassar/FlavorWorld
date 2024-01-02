@@ -1,251 +1,251 @@
 {
-    "recipes": [
-        {
-            "id": 1,
-            "dishType": "appetizer",
-            "name": "Caprese Salad",
-            "image": "/img/caprese_salad.jpg",
-            "ingredients": [
-                "2 large tomatoes, sliced",
-                "8 ounces fresh mozzarella, sliced",
-                "1/2 cup fresh basil leaves",
-                "3 tablespoons balsamic glaze",
-                "Salt and pepper to taste"
-            ],
-            "instructions": [
-                "Arrange tomato and mozzarella slices on a serving platter.",
-                "Tuck fresh basil leaves between tomato and mozzarella slices.",
-                "Drizzle with balsamic glaze and sprinkle with salt and pepper.",
-                "Serve immediately."
-            ]
-        },
-        {
-            "id": 2,
-            "dishType": "main",
-            "name": "Chicken Alfredo Pasta",
-            "image": "/img/chicken_alfredo_pasta.jpg",
-            "ingredients": [
-                "8 ounces fettuccine pasta",
-                "2 tablespoons butter",
-                "2 cloves garlic, minced",
-                "1 cup heavy cream",
-                "1 cup grated Parmesan cheese",
-                "Salt and pepper to taste",
-                "Grilled chicken breast, sliced (optional)"
-            ],
-            "instructions": [
-                "Cook fettuccine pasta according to package instructions.",
-                "In a large skillet, melt butter over medium heat. Add minced garlic and sauté until fragrant.",
-                "Stir in heavy cream and Parmesan cheese. Cook until the cheese is melted and the sauce is smooth.",
-                "Season with salt and pepper to taste. Add sliced grilled chicken if desired.",
-                "Toss the cooked pasta in the Alfredo sauce and serve immediately."
-            ]
-        },
-        {
-            "id": 3,
-            "dishType": "dessert",
-            "name": "Strawberry Shortcake",
-            "image": "/img/strawberry_shortcake.jpg",
-            "ingredients": [
-                "2 cups sliced strawberries",
-                "1/4 cup granulated sugar",
-                "2 cups all-purpose flour",
-                "1/4 cup granulated sugar",
-                "1 tablespoon baking powder",
-                "1/2 teaspoon salt",
-                "1/2 cup unsalted butter, cold and cubed",
-                "3/4 cup milk",
-                "1 teaspoon vanilla extract",
-                "Whipped cream for serving"
-            ],
-            "instructions": [
-                "In a bowl, toss sliced strawberries with sugar. Let sit for 15 minutes.",
-                "Preheat the oven to 425°F (220°C).",
-                "In a large bowl, whisk together flour, sugar, baking powder, and salt.",
-                "Cut in cold butter until the mixture resembles coarse crumbs.",
-                "Stir in milk and vanilla until just combined.",
-                "Drop spoonfuls of dough onto a baking sheet and bake for 12-15 minutes or until golden brown.",
-                "Slice the shortcakes in half, spoon strawberries over the bottom halves, top with whipped cream, and cover with the remaining shortcake halves."
-            ]
-        },
-        {
-            "id": 4,
-            "dishType": "appetizer",
-            "name": "Bruschetta",
-            "image": "/img/bruschetta.jpg",
-            "ingredients": [
-                "4 large tomatoes, diced",
-                "1/4 cup fresh basil, chopped",
-                "2 cloves garlic, minced",
-                "1 tablespoon balsamic vinegar",
-                "1/4 cup olive oil",
-                "Salt and pepper to taste",
-                "Baguette slices, toasted"
-            ],
-            "instructions": [
-                "In a bowl, combine diced tomatoes, basil, garlic, balsamic vinegar, and olive oil.",
-                "Season with salt and pepper to taste.",
-                "Spoon the tomato mixture onto toasted baguette slices and serve immediately."
-            ]
-        },
-        {
-            "id": 5,
-            "dishType": "main",
-            "name": "Vegetarian Stir-Fry",
-            "image": "/img/vegetarian_stir_fry.jpg",
-            "ingredients": [
-                "2 cups broccoli florets",
-                "1 red bell pepper, sliced",
-                "1 yellow bell pepper, sliced",
-                "1 carrot, julienned",
-                "1 cup snap peas",
-                "3 tablespoons soy sauce",
-                "2 tablespoons sesame oil",
-                "2 cloves garlic, minced",
-                "1 tablespoon fresh ginger, grated",
-                "2 cups cooked brown rice"
-            ],
-            "instructions": [
-                "In a wok or large skillet, heat sesame oil over medium-high heat.",
-                "Add garlic and ginger, and stir-fry for 1-2 minutes until fragrant.",
-                "Add broccoli, bell peppers, carrot, and snap peas. Stir-fry for 5-7 minutes until vegetables are tender-crisp.",
-                "Pour soy sauce over the vegetables and toss to combine.",
-                "Serve the stir-fry over cooked brown rice."
-            ]
-        },
-        {
-            "id": 6,
-            "dishType": "dessert",
-            "name": "Lemon Bars",
-            "image": "/img/lemon_bars.jpg",
-            "ingredients": [
-                "1 cup all-purpose flour",
-                "1/2 cup powdered sugar",
-                "1/2 cup unsalted butter, softened",
-                "2 large eggs",
-                "1 cup granulated sugar",
-                "2 tablespoons all-purpose flour",
-                "1/2 teaspoon baking powder",
-                "1/4 teaspoon salt",
-                "2 tablespoons lemon juice",
-                "1 teaspoon lemon zest",
-                "Powdered sugar for dusting"
-            ],
-            "instructions": [
-                "Preheat oven to 350°F (175°C). Grease a 9x9-inch baking pan.",
-                "In a medium bowl, combine flour, powdered sugar, and softened butter. Press into the bottom of the prepared pan.",
-                "Bake the crust for 15-20 minutes or until lightly golden.",
-                "In another bowl, whisk together eggs, granulated sugar, flour, baking powder, salt, lemon juice, and lemon zest.",
-                "Pour the lemon mixture over the baked crust and return to the oven for an additional 20-25 minutes, or until set.",
-                "Allow to cool completely before dusting with powdered sugar and cutting into bars."
-            ]
-        },
-        {
-            "id": 7,
-            "dishType": "main",
-            "name": "Mushroom Risotto",
-            "image": "/img/mushroom_risotto.jpg",
-            "ingredients": [
-                "1 cup Arborio rice",
-                "4 cups vegetable broth",
-                "1 cup mushrooms, sliced",
-                "1/2 cup dry white wine",
-                "1/2 cup grated Parmesan cheese",
-                "1 small onion, finely chopped",
-                "2 cloves garlic, minced",
-                "2 tablespoons butter",
-                "2 tablespoons olive oil",
-                "Salt and pepper to taste",
-                "Fresh parsley for garnish"
-            ],
-            "instructions": [
-                "In a saucepan, heat the vegetable broth and keep it warm over low heat.",
-                "In a large skillet, heat olive oil and 1 tablespoon butter over medium heat. Add onions and garlic, sauté until softened.",
-                "Add Arborio rice to the skillet and stir to coat with oil. Cook for 2-3 minutes until the rice is lightly toasted.",
-                "Pour in the white wine and cook until it is mostly evaporated.",
-                "Begin adding warm vegetable broth, one ladle at a time, stirring frequently. Allow the liquid to be absorbed before adding the next ladle.",
-                "When the rice is almost tender, stir in the mushrooms. Continue adding broth and stirring until the rice is creamy and fully cooked.",
-                "Stir in Parmesan cheese and remaining butter. Season with salt and pepper.",
-                "Garnish with fresh parsley before serving."
-            ]
-        },
-        {
-            "id": 8,
-            "dishType": "dessert",
-            "name": "Apple Pie",
-            "image": "/img/apple_pie.jpg",
-            "ingredients": [
-                "6 cups peeled, sliced apples (such as Granny Smith)",
-                "3/4 cup granulated sugar",
-                "1 teaspoon ground cinnamon",
-                "1/4 teaspoon ground nutmeg",
-                "1 tablespoon lemon juice",
-                "2 tablespoons all-purpose flour",
-                "1 package refrigerated pie crusts (or homemade)",
-                "1 egg, beaten (for egg wash)",
-                "2 tablespoons unsalted butter, cut into small pieces"
-            ],
-            "instructions": [
-                "Preheat oven to 425°F (220°C).",
-                "In a large bowl, combine sliced apples, sugar, cinnamon, nutmeg, lemon juice, and flour. Toss until the apples are evenly coated.",
-                "Roll out one pie crust and place it in a pie dish. Pour in the apple filling.",
-                "Roll out the second pie crust and place it over the filling. Trim and crimp the edges to seal the pie.",
-                "Cut slits in the top crust to allow steam to escape. Brush the crust with beaten egg for a golden finish.",
-                "Place small pieces of butter over the top of the pie.",
-                "Bake for 45-50 minutes or until the crust is golden and the filling is bubbly.",
-                "Allow to cool before slicing and serving."
-            ]
-        },
-        {
-            "id": 9,
-            "dishType": "appetizer",
-            "name": "Spinach and Artichoke Dip",
-            "image": "/img/spinach_artichoke_dip.jpg",
-            "ingredients": [
-                "1 cup frozen chopped spinach, thawed and drained",
-                "1 cup canned artichoke hearts, drained and chopped",
-                "1/2 cup mayonnaise",
-                "1/2 cup sour cream",
-                "1 cup shredded mozzarella cheese",
-                "1/2 cup grated Parmesan cheese",
-                "1 teaspoon garlic powder",
-                "Salt and pepper to taste",
-                "Tortilla chips or sliced baguette for serving"
-            ],
-            "instructions": [
-                "Preheat oven to 375°F (190°C).",
-                "In a mixing bowl, combine spinach, artichoke hearts, mayonnaise, sour cream, mozzarella, Parmesan, garlic powder, salt, and pepper.",
-                "Transfer the mixture to a baking dish and spread it evenly.",
-                "Bake for 25-30 minutes or until the dip is hot and bubbly.",
-                "Serve with tortilla chips or sliced baguette."
-            ]
-        },
-        {
-            "id": 10,
-            "dishType": "main",
-            "name": "Shrimp Scampi",
-            "image": "/img/shrimp_scampi.jpg",
-            "ingredients": [
-                "1 pound large shrimp, peeled and deveined",
-                "8 ounces linguine or spaghetti",
-                "4 tablespoons unsalted butter",
-                "4 tablespoons olive oil",
-                "4 cloves garlic, minced",
-                "1/2 teaspoon red pepper flakes (optional)",
-                "1/2 cup dry white wine",
-                "Juice of 1 lemon",
-                "Salt and black pepper to taste",
-                "2 tablespoons chopped fresh parsley",
-                "Grated Parmesan cheese for serving"
-            ],
-            "instructions": [
-                "Cook the pasta according to package instructions. Drain and set aside.",
-                "In a large skillet, heat butter and olive oil over medium heat. Add minced garlic and red pepper flakes, sauté for 1-2 minutes until fragrant.",
-                "Add shrimp to the skillet and cook until they turn pink, about 2-3 minutes per side.",
-                "Pour in white wine and lemon juice. Season with salt and black pepper. Simmer for 2-3 minutes.",
-                "Add cooked pasta to the skillet, tossing to coat in the sauce. Cook for an additional 2-3 minutes until heated through.",
-                "Sprinkle with chopped parsley and serve with grated Parmesan cheese."
-            ]
-        }
-    ]
+  "recipes": [
+    {
+      "id": 1,
+      "dishType": "appetizer",
+      "name": "Caprese Salad",
+      "image": "/img/caprese_salad.jpg",
+      "ingredients": [
+        "2 large tomatoes, sliced",
+        "8 ounces fresh mozzarella, sliced",
+        "1/2 cup fresh basil leaves",
+        "3 tablespoons balsamic glaze",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Arrange tomato and mozzarella slices on a serving platter.",
+        "Tuck fresh basil leaves between tomato and mozzarella slices.",
+        "Drizzle with balsamic glaze and sprinkle with salt and pepper.",
+        "Serve immediately."
+      ]
+    },
+    {
+      "id": 2,
+      "dishType": "main",
+      "name": "Chicken Alfredo Pasta",
+      "image": "/img/chicken_alfredo_pasta.jpg",
+      "ingredients": [
+        "8 ounces fettuccine pasta",
+        "2 tablespoons butter",
+        "2 cloves garlic, minced",
+        "1 cup heavy cream",
+        "1 cup grated Parmesan cheese",
+        "Salt and pepper to taste",
+        "Grilled chicken breast, sliced (optional)"
+      ],
+      "instructions": [
+        "Cook fettuccine pasta according to package instructions.",
+        "In a large skillet, melt butter over medium heat. Add minced garlic and sauté until fragrant.",
+        "Stir in heavy cream and Parmesan cheese. Cook until the cheese is melted and the sauce is smooth.",
+        "Season with salt and pepper to taste. Add sliced grilled chicken if desired.",
+        "Toss the cooked pasta in the Alfredo sauce and serve immediately."
+      ]
+    },
+    {
+      "id": 3,
+      "dishType": "dessert",
+      "name": "Strawberry Shortcake 2",
+      "image": "/img/strawberry_shortcake.jpg",
+      "ingredients": [
+        "2 cups sliced strawberries",
+        "1/4 cup granulated sugar",
+        "2 cups all-purpose flour",
+        "1/4 cup granulated sugar",
+        "1 tablespoon baking powder",
+        "1/2 teaspoon salt",
+        "1/2 cup unsalted butter, cold and cubed",
+        "3/4 cup milk",
+        "1 teaspoon vanilla extract",
+        "Whipped cream for serving"
+      ],
+      "instructions": [
+        "In a bowl, toss sliced strawberries with sugar. Let sit for 15 minutes.",
+        "Preheat the oven to 425°F (220°C).",
+        "In a large bowl, whisk together flour, sugar, baking powder, and salt.",
+        "Cut in cold butter until the mixture resembles coarse crumbs.",
+        "Stir in milk and vanilla until just combined.",
+        "Drop spoonfuls of dough onto a baking sheet and bake for 12-15 minutes or until golden brown.",
+        "Slice the shortcakes in half, spoon strawberries over the bottom halves, top with whipped cream, and cover with the remaining shortcake halves."
+      ]
+    },
+    {
+      "id": 4,
+      "dishType": "appetizer",
+      "name": "Bruschetta",
+      "image": "/img/bruschetta.jpg",
+      "ingredients": [
+        "4 large tomatoes, diced",
+        "1/4 cup fresh basil, chopped",
+        "2 cloves garlic, minced",
+        "1 tablespoon balsamic vinegar",
+        "1/4 cup olive oil",
+        "Salt and pepper to taste",
+        "Baguette slices, toasted"
+      ],
+      "instructions": [
+        "In a bowl, combine diced tomatoes, basil, garlic, balsamic vinegar, and olive oil.",
+        "Season with salt and pepper to taste.",
+        "Spoon the tomato mixture onto toasted baguette slices and serve immediately."
+      ]
+    },
+    {
+      "id": 5,
+      "dishType": "main",
+      "name": "Vegetarian Stir-Fry",
+      "image": "/img/vegetarian_stir_fry.jpg",
+      "ingredients": [
+        "2 cups broccoli florets",
+        "1 red bell pepper, sliced",
+        "1 yellow bell pepper, sliced",
+        "1 carrot, julienned",
+        "1 cup snap peas",
+        "3 tablespoons soy sauce",
+        "2 tablespoons sesame oil",
+        "2 cloves garlic, minced",
+        "1 tablespoon fresh ginger, grated",
+        "2 cups cooked brown rice"
+      ],
+      "instructions": [
+        "In a wok or large skillet, heat sesame oil over medium-high heat.",
+        "Add garlic and ginger, and stir-fry for 1-2 minutes until fragrant.",
+        "Add broccoli, bell peppers, carrot, and snap peas. Stir-fry for 5-7 minutes until vegetables are tender-crisp.",
+        "Pour soy sauce over the vegetables and toss to combine.",
+        "Serve the stir-fry over cooked brown rice."
+      ]
+    },
+    {
+      "id": 6,
+      "dishType": "dessert",
+      "name": "Lemon Bars",
+      "image": "/img/lemon_bars.jpg",
+      "ingredients": [
+        "1 cup all-purpose flour",
+        "1/2 cup powdered sugar",
+        "1/2 cup unsalted butter, softened",
+        "2 large eggs",
+        "1 cup granulated sugar",
+        "2 tablespoons all-purpose flour",
+        "1/2 teaspoon baking powder",
+        "1/4 teaspoon salt",
+        "2 tablespoons lemon juice",
+        "1 teaspoon lemon zest",
+        "Powdered sugar for dusting"
+      ],
+      "instructions": [
+        "Preheat oven to 350°F (175°C). Grease a 9x9-inch baking pan.",
+        "In a medium bowl, combine flour, powdered sugar, and softened butter. Press into the bottom of the prepared pan.",
+        "Bake the crust for 15-20 minutes or until lightly golden.",
+        "In another bowl, whisk together eggs, granulated sugar, flour, baking powder, salt, lemon juice, and lemon zest.",
+        "Pour the lemon mixture over the baked crust and return to the oven for an additional 20-25 minutes, or until set.",
+        "Allow to cool completely before dusting with powdered sugar and cutting into bars."
+      ]
+    },
+    {
+      "id": 7,
+      "dishType": "main",
+      "name": "Mushroom Risotto",
+      "image": "/img/mushroom_risotto.jpg",
+      "ingredients": [
+        "1 cup Arborio rice",
+        "4 cups vegetable broth",
+        "1 cup mushrooms, sliced",
+        "1/2 cup dry white wine",
+        "1/2 cup grated Parmesan cheese",
+        "1 small onion, finely chopped",
+        "2 cloves garlic, minced",
+        "2 tablespoons butter",
+        "2 tablespoons olive oil",
+        "Salt and pepper to taste",
+        "Fresh parsley for garnish"
+      ],
+      "instructions": [
+        "In a saucepan, heat the vegetable broth and keep it warm over low heat.",
+        "In a large skillet, heat olive oil and 1 tablespoon butter over medium heat. Add onions and garlic, sauté until softened.",
+        "Add Arborio rice to the skillet and stir to coat with oil. Cook for 2-3 minutes until the rice is lightly toasted.",
+        "Pour in the white wine and cook until it is mostly evaporated.",
+        "Begin adding warm vegetable broth, one ladle at a time, stirring frequently. Allow the liquid to be absorbed before adding the next ladle.",
+        "When the rice is almost tender, stir in the mushrooms. Continue adding broth and stirring until the rice is creamy and fully cooked.",
+        "Stir in Parmesan cheese and remaining butter. Season with salt and pepper.",
+        "Garnish with fresh parsley before serving."
+      ]
+    },
+    {
+      "id": 8,
+      "dishType": "dessert",
+      "name": "Apple Pie",
+      "image": "/img/apple_pie.jpg",
+      "ingredients": [
+        "6 cups peeled, sliced apples (such as Granny Smith)",
+        "3/4 cup granulated sugar",
+        "1 teaspoon ground cinnamon",
+        "1/4 teaspoon ground nutmeg",
+        "1 tablespoon lemon juice",
+        "2 tablespoons all-purpose flour",
+        "1 package refrigerated pie crusts (or homemade)",
+        "1 egg, beaten (for egg wash)",
+        "2 tablespoons unsalted butter, cut into small pieces"
+      ],
+      "instructions": [
+        "Preheat oven to 425°F (220°C).",
+        "In a large bowl, combine sliced apples, sugar, cinnamon, nutmeg, lemon juice, and flour. Toss until the apples are evenly coated.",
+        "Roll out one pie crust and place it in a pie dish. Pour in the apple filling.",
+        "Roll out the second pie crust and place it over the filling. Trim and crimp the edges to seal the pie.",
+        "Cut slits in the top crust to allow steam to escape. Brush the crust with beaten egg for a golden finish.",
+        "Place small pieces of butter over the top of the pie.",
+        "Bake for 45-50 minutes or until the crust is golden and the filling is bubbly.",
+        "Allow to cool before slicing and serving."
+      ]
+    },
+    {
+      "id": 9,
+      "dishType": "appetizer",
+      "name": "Spinach and Artichoke Dip",
+      "image": "/img/spinach_artichoke_dip.jpg",
+      "ingredients": [
+        "1 cup frozen chopped spinach, thawed and drained",
+        "1 cup canned artichoke hearts, drained and chopped",
+        "1/2 cup mayonnaise",
+        "1/2 cup sour cream",
+        "1 cup shredded mozzarella cheese",
+        "1/2 cup grated Parmesan cheese",
+        "1 teaspoon garlic powder",
+        "Salt and pepper to taste",
+        "Tortilla chips or sliced baguette for serving"
+      ],
+      "instructions": [
+        "Preheat oven to 375°F (190°C).",
+        "In a mixing bowl, combine spinach, artichoke hearts, mayonnaise, sour cream, mozzarella, Parmesan, garlic powder, salt, and pepper.",
+        "Transfer the mixture to a baking dish and spread it evenly.",
+        "Bake for 25-30 minutes or until the dip is hot and bubbly.",
+        "Serve with tortilla chips or sliced baguette."
+      ]
+    },
+    {
+      "id": 10,
+      "dishType": "main",
+      "name": "Shrimp Scampi",
+      "image": "/img/shrimp_scampi.jpg",
+      "ingredients": [
+        "1 pound large shrimp, peeled and deveined",
+        "8 ounces linguine or spaghetti",
+        "4 tablespoons unsalted butter",
+        "4 tablespoons olive oil",
+        "4 cloves garlic, minced",
+        "1/2 teaspoon red pepper flakes (optional)",
+        "1/2 cup dry white wine",
+        "Juice of 1 lemon",
+        "Salt and black pepper to taste",
+        "2 tablespoons chopped fresh parsley",
+        "Grated Parmesan cheese for serving"
+      ],
+      "instructions": [
+        "Cook the pasta according to package instructions. Drain and set aside.",
+        "In a large skillet, heat butter and olive oil over medium heat. Add minced garlic and red pepper flakes, sauté for 1-2 minutes until fragrant.",
+        "Add shrimp to the skillet and cook until they turn pink, about 2-3 minutes per side.",
+        "Pour in white wine and lemon juice. Season with salt and black pepper. Simmer for 2-3 minutes.",
+        "Add cooked pasta to the skillet, tossing to coat in the sauce. Cook for an additional 2-3 minutes until heated through.",
+        "Sprinkle with chopped parsley and serve with grated Parmesan cheese."
+      ]
+    }
+  ]
 }
