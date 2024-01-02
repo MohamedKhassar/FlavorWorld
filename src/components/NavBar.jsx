@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
     const [lastBtn, setBtn] = useState(null)
     const [isHidden, setIsHidden] = useState(false)
+    const [uploadImage, setUploadImage] = useState()
     // const nav = useNavigate()
     const [data, setData] = useState({
         dishType: "",
@@ -40,29 +41,21 @@ const NavBar = () => {
         e.preventDefault()
         try {
             const formData = new FormData()
-            formData.append("file", data.image)
+            formData.append("file", uploadImage)
             formData.append("upload_preset", "fpjad1ud")
             console.log(formData);
             await axios.post("https://api.cloudinary.com/v1_1/dhlxoefrk/image/upload", formData).then(res => setData({ ...data, image: res.data.secure_url }))
 
-            if (!data.image == "") {
+            if (data.image) {
 
-                await axios.post("http://localhost:3000/recipes", data).then(setIsHidden(false)).then(setData({
-                    desc: "",
-                    dishType: "",
-                    image: "",
-                    ingredients: "",
-                    instructions: "",
-                    name: ""
-                }))
+                await axios.post("http://localhost:3000/recipes", data).then(setIsHidden(false))
             }
-            console.log(data);
-
         } catch (error) {
             console.log(error);
         }
     }
-
+    
+    console.log(data);            
 
     useEffect(() => {
         Aos.init({
@@ -98,7 +91,7 @@ const NavBar = () => {
                         </div>
                         <div>
                             <label htmlFor="image" className="block mb-2 text-sm font-medium text-gray-900  capitalize">image</label>
-                            <input type="file" id="image" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  outline-none" placeholder="image" onChange={(e) => setData({ ...data, image: e.target.files[0] })} multiple={false} />
+                            <input type="file" id="image" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  outline-none" placeholder="image" onChange={(e) => setUploadImage(e.target.files.item(0))} multiple={false} />
                         </div>
                         <div>
                             <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900  capitalize">name</label>

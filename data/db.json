@@ -256,6 +256,40 @@
         "Add cooked pasta to the skillet, tossing to coat in the sauce. Cook for an additional 2-3 minutes until heated through.",
         "Sprinkle with chopped parsley and serve with grated Parmesan cheese."
       ]
+    },
+    {
+      "dishType": "appetizer",
+      "name": "Samsung S10",
+      "desc": "dsfdfsdfdsfdfsd",
+      "image": "https://res.cloudinary.com/dhlxoefrk/image/upload/v1704224471/gwth69pvpp8bl63yeqib.png",
+      "ingredients": [
+        "sdfsdfsdfs",
+        "sdfsdfsdfsd",
+        "fsdfsdfsdf",
+        "sdfsdfsdf"
+      ],
+      "instructions": [
+        "sdfsdfsd",
+        "fsdfsdfsd",
+        "fsdfsdfsdf"
+      ],
+      "id": 11
+    },
+    {
+      "dishType": "dessert",
+      "name": "Samsung galaxy",
+      "desc": "dsssssssssssssssssssss",
+      "image": "https://res.cloudinary.com/dhlxoefrk/image/upload/v1704224928/pounqiqifsshnfcrq4mn.png",
+      "ingredients": [
+        "dsfsdfsdf",
+        "sdfsdfsdf",
+        "sdfsdfs"
+      ],
+      "instructions": [
+        "sdsdasasd",
+        "asdasdsdasda"
+      ],
+      "id": 12
     }
   ]
 }
