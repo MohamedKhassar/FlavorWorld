@@ -290,6 +290,24 @@
         "asdasdsdasda"
       ],
       "id": 12
+    },
+    {
+      "dishType": "main course",
+      "name": "Samsung galaxy",
+      "desc": "sdffffffffffffffffffffffffffsdfsf",
+      "image": "https://res.cloudinary.com/dhlxoefrk/image/upload/v1704226635/b4mmukfn2zlzkhwb37gx.png",
+      "ingredients": [
+        "sdfsdfs",
+        "dfsdfsdf",
+        "sdfsdfsdf",
+        "sdfsdfsf"
+      ],
+      "instructions": [
+        "ssdfsfdsdfsdfsdf",
+        "sdfsdfsdf",
+        "sdfsdf"
+      ],
+      "id": 13
     }
   ]
 }

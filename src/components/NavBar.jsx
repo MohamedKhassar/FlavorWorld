@@ -1,13 +1,13 @@
 import Aos from "aos";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const NavBar = () => {
     const [lastBtn, setBtn] = useState(null)
     const [isHidden, setIsHidden] = useState(false)
     const [uploadImage, setUploadImage] = useState()
-    // const nav = useNavigate()
+    const nav = useNavigate()
     const [data, setData] = useState({
         dishType: "",
         name: "",
@@ -46,16 +46,27 @@ const NavBar = () => {
             console.log(formData);
             await axios.post("https://api.cloudinary.com/v1_1/dhlxoefrk/image/upload", formData).then(res => setData({ ...data, image: res.data.secure_url }))
 
-            if (data.image) {
 
-                await axios.post("http://localhost:3000/recipes", data).then(setIsHidden(false))
-            }
         } catch (error) {
             console.log(error);
         }
+        if (data.image) {
+            try {
+                await axios.post("http://localhost:3000/recipes", data).then(setIsHidden(false)).then(setData({
+                    dishType: "",
+                    name: "",
+                    desc: "",
+                    image: "",
+                    ingredients: "",
+                    instructions: "",
+                }))
+            } catch (error) {
+                console.log(error)
+            }
+        }
     }
-    
-    console.log(data);            
+
+    console.log(data);
 
     useEffect(() => {
         Aos.init({
