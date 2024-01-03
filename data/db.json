@@ -246,6 +246,28 @@
         "Add cooked pasta to the skillet, tossing to coat in the sauce. Cook for an additional 2-3 minutes until heated through.",
         "Sprinkle with chopped parsley and serve with grated Parmesan cheese."
       ]
+    },
+    {
+      "dishType": "appetizer",
+      "name": "asdasd",
+      "desc": "sadsdasd",
+      "image": "https://res.cloudinary.com/dhlxoefrk/image/upload/v1704272890/j3c25etmflgs4si7zbr9.gif",
+      "ingredients": [
+        "asdasd"
+      ],
+      "instructions": [
+        "asdasdasd"
+      ],
+      "id": 11
+    },
+    {
+      "dishType": "appetizer",
+      "name": "",
+      "desc": "",
+      "image": "",
+      "ingredients": "",
+      "instructions": "",
+      "id": 12
     }
   ]
 }

@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import {useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 function Edit() {
     const nav= useNavigate();
     const { id } = useParams();
+    // console.log(id);
     const [uplate, setUplate] = useState({
         name: '',
         ingredients: [],
@@ -14,7 +15,7 @@ function Edit() {
             .then(response => {
                 console.log('Le plat a été mis à jour avec succès !');
                 console.log(response.data); // Afficher la réponse du serveur si nécessaire
-                nav('/');
+                nav(`/${id}`);
             })
             .catch(error => {
                 console.error('Une erreur s\'est produite lors de la mise à jour de le plat :', error);

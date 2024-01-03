@@ -43,27 +43,26 @@ const NavBar = () => {
             const formData = new FormData()
             formData.append("file", uploadImage)
             formData.append("upload_preset", "fpjad1ud")
-            console.log(formData);
-            await axios.post("https://api.cloudinary.com/v1_1/dhlxoefrk/image/upload", formData).then(res => setData({ ...data, image: res.data.secure_url }))
-
+            await axios.post("https://api.cloudinary.com/v1_1/dhlxoefrk/image/upload", formData).then(res => setData({ ...data, image: res.data.secure_url })).then(
+          
+                
+                
+                    // await axios.post("http://localhost:3000/recipes", data).then(setIsHidden(false)).then(setData({
+                    //     dishType: "",
+                    //     name: "",
+                    //     desc: "",
+                    //     image: "",
+                    //     ingredients: "",
+                    //     instructions: "",
+                    // }))
+                
+            
+            )
 
         } catch (error) {
             console.log(error);
         }
-        if (data.image) {
-            try {
-                await axios.post("http://localhost:3000/recipes", data).then(setIsHidden(false)).then(setData({
-                    dishType: "",
-                    name: "",
-                    desc: "",
-                    image: "",
-                    ingredients: "",
-                    instructions: "",
-                }))
-            } catch (error) {
-                console.log(error)
-            }
-        }
+        
     }
 
     console.log(data);
@@ -86,10 +85,12 @@ const NavBar = () => {
             <div>
                 <button className="first-letter:capitalize transition-all duration-300 p-3 w-16 hover:bg-slate-600 hover:text-white rounded" onClick={() => setIsHidden(!isHidden)}>add</button>
             </div>
-            <div className={`pb-16 absolute top-24 left-0 backdrop-blur-sm bg-black/30 h-screen w-screen ${isHidden == false ? "hidden" : "flex"} flex-col justify-center items-center gap-10`} data-aos="zoom-in">
+            <div className={`pb-16 absolute top-24 left-0 backdrop-blur-sm bg-black/30 h-screen w-screen ${isHidden == false ? "hidden" : "flex"} flex-col justify-center items-center gap-5`} data-aos="zoom-in">
                 <form className="w-1/2" >
-                    <div className="grid grid-cols-1 gap-y-3">
-                        <div>
+                    <div className="grid grid-cols-1">
+                        <div className="flex gap-x-5 ">
+
+                        <div className="w-full">
 
                             <label htmlFor="countries" className="block mb-2 text-sm font-medium text-gray-900 ">Select an option</label>
                             <select id="countries" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 capitalize outline-none" onChange={(e) => setData({ ...data, dishType: e.target.value })}>
@@ -100,32 +101,38 @@ const NavBar = () => {
                             </select>
 
                         </div>
-                        <div>
+                        <div className="w-full">
                             <label htmlFor="image" className="block mb-2 text-sm font-medium text-gray-900  capitalize">image</label>
                             <input type="file" id="image" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  outline-none" placeholder="image" onChange={(e) => setUploadImage(e.target.files.item(0))} multiple={false} />
+                        </div>
                         </div>
                         <div>
                             <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900  capitalize">name</label>
                             <input type="text" id="name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  outline-none" placeholder="Pizza" onChange={(e) => setData({ ...data, name: e.target.value })} />
                         </div>
-
-                        <div>
+                        <div className="flex justify-around gap-x-5">
+                        <div className="w-full">
                             <label htmlFor="description" className="block mb-2 text-sm font-medium text-gray-900 ">Description</label>
-                            <textarea id="description" rows="4" className="w-full outline-none block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500  " placeholder="Write your a Description here..." onChange={(e) => setData({ ...data, desc: e.target.value })}></textarea>
+                            <textarea id="description" rows="4" className="w-full outline-none block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Write your a Description here..." onChange={(e) => setData({ ...data, desc: e.target.value })}></textarea>
 
                         </div>
-                        <div>
+                        <div className="w-full">
                             <label htmlFor="ingredients" className="block mb-2 text-sm font-medium text-gray-900 ">Ingredients</label>
                             <textarea id="ingredients" rows="4" className="w-full outline-none block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500  " placeholder="Write your a Ingredients here..." onChange={(e) => setData({ ...data, ingredients: e.target.value.trim().replace(/\r\n/g, "\n").split("\n") })}></textarea>
 
-                        </div>
+                            </div>
+                            </div>
+                            
                         <div>
                             <label htmlFor="instructions" className="block mb-2 text-sm font-medium text-gray-900 ">Instructions</label>
                             <textarea id="instructions" rows="4" className="w-full outline-none block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500  " placeholder="Write your Instructions here..." onChange={(e) => setData({ ...data, instructions: e.target.value.replace(/\r\n/g, "\n").split("\n") })}></textarea>
 
                         </div>
                     </div>
-                    <button className="mt-5 p-3 bg-green-700 hover:bg-green-800 transition-all w-fit rounded-md" onClick={handelSave}>save</button>
+                    <div className="grid grid-cols-1 justify-center w-full">
+
+                    <button className="my-8 p-3 bg-green-700 hover:bg-green-800 transition-all rounded-md " onClick={handelSave}>save</button>
+                    </div>
                 </form>
             </div>
         </div>

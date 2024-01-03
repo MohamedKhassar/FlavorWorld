@@ -1,8 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import axios from "axios";
-import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+// import axios from "axios";
+// import { useEffect, useState } from "react";
+import { Link, useNavigate, useParams } from "react-router-dom";
 const Plate = () => {
     const id = useParams().id
     const [plate, setPlate] = useState({})
