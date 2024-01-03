@@ -4,7 +4,6 @@
       "id": 1,
       "dishType": "appetizer",
       "name": "Caprese Salad",
-      "desc": "A classic Italian salad showcasing the fresh flavors of tomatoes, mozzarella, and basil, drizzled with balsamic glaze.",
       "image": "/img/caprese_salad.jpg",
       "ingredients": [
         "2 large tomatoes, sliced",
@@ -24,7 +23,6 @@
       "id": 2,
       "dishType": "main",
       "name": "Chicken Alfredo Pasta",
-      "desc": "A comforting pasta dish featuring fettuccine tossed in a creamy Alfredo sauce made with garlic, Parmesan cheese, and optionally, grilled chicken.",
       "image": "/img/chicken_alfredo_pasta.jpg",
       "ingredients": [
         "8 ounces fettuccine pasta",
@@ -46,8 +44,7 @@
     {
       "id": 3,
       "dishType": "dessert",
-      "name": "Strawberry Shortcake",
-      "desc": "A delightful dessert featuring sweetened strawberries sandwiched between layers of tender shortcake, topped with whipped cream.",
+      "name": "Strawberry Shortcake 2",
       "image": "/img/strawberry_shortcake.jpg",
       "ingredients": [
         "2 cups sliced strawberries",
@@ -75,7 +72,6 @@
       "id": 4,
       "dishType": "appetizer",
       "name": "Bruschetta",
-      "desc": "A classic Italian appetizer featuring diced tomatoes, fresh basil, and garlic, drizzled with balsamic vinegar and olive oil on toasted baguette slices.",
       "image": "/img/bruschetta.jpg",
       "ingredients": [
         "4 large tomatoes, diced",
@@ -96,7 +92,6 @@
       "id": 5,
       "dishType": "main",
       "name": "Vegetarian Stir-Fry",
-      "desc": "A flavorful and colorful stir-fry featuring broccoli, bell peppers, carrots, and snap peas tossed in a savory soy and sesame sauce, served over brown rice.",
       "image": "/img/vegetarian_stir_fry.jpg",
       "ingredients": [
         "2 cups broccoli florets",
@@ -122,7 +117,6 @@
       "id": 6,
       "dishType": "dessert",
       "name": "Lemon Bars",
-      "desc": "Tangy and sweet lemon bars with a buttery crust, topped with a luscious lemon filling and dusted with powdered sugar.",
       "image": "/img/lemon_bars.jpg",
       "ingredients": [
         "1 cup all-purpose flour",
@@ -150,7 +144,6 @@
       "id": 7,
       "dishType": "main",
       "name": "Mushroom Risotto",
-      "desc": "A creamy and flavorful risotto made with Arborio rice, mushrooms, Parmesan cheese, and a touch of white wine.",
       "image": "/img/mushroom_risotto.jpg",
       "ingredients": [
         "1 cup Arborio rice",
@@ -180,7 +173,6 @@
       "id": 8,
       "dishType": "dessert",
       "name": "Apple Pie",
-      "desc": "A classic apple pie with a flaky crust, filled with sweet and spiced apple slices, and baked to golden perfection.",
       "image": "/img/apple_pie.jpg",
       "ingredients": [
         "6 cups peeled, sliced apples (such as Granny Smith)",
@@ -208,7 +200,6 @@
       "id": 9,
       "dishType": "appetizer",
       "name": "Spinach and Artichoke Dip",
-      "desc": "A creamy and cheesy dip with spinach and artichoke hearts, baked to perfection and served with tortilla chips or sliced baguette.",
       "image": "/img/spinach_artichoke_dip.jpg",
       "ingredients": [
         "1 cup frozen chopped spinach, thawed and drained",
@@ -233,7 +224,6 @@
       "id": 10,
       "dishType": "main",
       "name": "Shrimp Scampi",
-      "desc": "A flavorful pasta dish with succulent shrimp, garlic, and a white wine and lemon sauce, served over linguine or spaghetti.",
       "image": "/img/shrimp_scampi.jpg",
       "ingredients": [
         "1 pound large shrimp, peeled and deveined",
@@ -256,24 +246,6 @@
         "Add cooked pasta to the skillet, tossing to coat in the sauce. Cook for an additional 2-3 minutes until heated through.",
         "Sprinkle with chopped parsley and serve with grated Parmesan cheese."
       ]
-    },
-    {
-      "dishType": "main course",
-      "name": "Samsung galaxy",
-      "desc": "sdffffffffffffffffffffffffffsdfsf",
-      "image": "https://res.cloudinary.com/dhlxoefrk/image/upload/v1704226635/b4mmukfn2zlzkhwb37gx.png",
-      "ingredients": [
-        "sdfsdfs",
-        "dfsdfsdf",
-        "sdfsdfsdf",
-        "sdfsdfsf"
-      ],
-      "instructions": [
-        "ssdfsfdsdfsdfsdf",
-        "sdfsdfsdf",
-        "sdfsdf"
-      ],
-      "id": 13
     }
   ]
 }
