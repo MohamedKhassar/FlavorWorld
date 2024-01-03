@@ -258,40 +258,6 @@
       ]
     },
     {
-      "dishType": "appetizer",
-      "name": "Samsung S10",
-      "desc": "dsfdfsdfdsfdfsd",
-      "image": "https://res.cloudinary.com/dhlxoefrk/image/upload/v1704224471/gwth69pvpp8bl63yeqib.png",
-      "ingredients": [
-        "sdfsdfsdfs",
-        "sdfsdfsdfsd",
-        "fsdfsdfsdf",
-        "sdfsdfsdf"
-      ],
-      "instructions": [
-        "sdfsdfsd",
-        "fsdfsdfsd",
-        "fsdfsdfsdf"
-      ],
-      "id": 11
-    },
-    {
-      "dishType": "dessert",
-      "name": "Samsung galaxy",
-      "desc": "dsssssssssssssssssssss",
-      "image": "https://res.cloudinary.com/dhlxoefrk/image/upload/v1704224928/pounqiqifsshnfcrq4mn.png",
-      "ingredients": [
-        "dsfsdfsdf",
-        "sdfsdfsdf",
-        "sdfsdfs"
-      ],
-      "instructions": [
-        "sdsdasasd",
-        "asdasdsdasda"
-      ],
-      "id": 12
-    },
-    {
       "dishType": "main course",
       "name": "Samsung galaxy",
       "desc": "sdffffffffffffffffffffffffffsdfsf",
