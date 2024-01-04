@@ -7,5 +7,4 @@ const Welcome = () => {
         </header>
     );
 }
-
 export default Welcome;

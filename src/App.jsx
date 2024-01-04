@@ -1,10 +1,13 @@
+import { BrowserRouter , Routes , Route } from "react-router-dom"
+import "./App.css"
 import Home from "./pages/Home"
 import Dish from "./pages/Dish"
-import Welcome from "./components/Welcome"
 import { useEffect } from "react"
 import Aos from "aos"
 import Plate from "./pages/Plate"
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import NavBar from "./components/NavBar"
+import GetPlates from "./pages/GetPlates"
+import Edit from "./pages/Edit"
 export default function App() {
   useEffect(() => {
     Aos.init({
@@ -16,11 +19,14 @@ export default function App() {
 }, [])
   return (
     <BrowserRouter>
-            <Welcome />
+      <NavBar/>
         <Routes>
-          <Route path="/" element={<Home/>}/>
+          <Route path="/" exact element={<Home/>}/>
+          <Route path="/all-plates" exact element={<GetPlates />}/>
           <Route path="/dish/:type" element={<Dish/>}/>
           <Route path="/:id" element={<Plate/>}/>
+          <Route path="/edit/:id" element={<Edit />}/>
+          <Route path="*" element={<h1>check the route</h1>}/>
         </Routes>
     </BrowserRouter>
   )
