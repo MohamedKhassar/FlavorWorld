@@ -55,10 +55,7 @@ const Plate = () => {
 
                         )}
                     </ul>
-                    <button className="bg-red-500 hover:bg-red-600 hover:text-white p-3 w-50 rounded capitalize" onClick={handelDelete}>
-                            delete
-                        </button>
-                    <Link className=" bg-blue-400 hover:bg-blue-500 first-letter:capitalize transition-all duration-300 p-3 w-50 hover:text-white text-center rounded" to={`/edit/${id}`}>Modify</Link>
+                    <Link className="ml-5 first-letter:capitalize transition-all duration-300 p-3 w-50 hover:bg-slate-600 hover:text-white text-center rounded" to={`/edit/${id}`}>Modify</Link>
                 </div>
                 </div>
         </div>
