@@ -116,7 +116,7 @@
     {
       "id": 6,
       "dishType": "dessert",
-      "name": "Lemon Bars",
+      "name": "Lemon Bars111111111111111111",
       "image": "/img/lemon_bars.jpg",
       "ingredients": [
         "1 cup all-purpose flour",
@@ -249,25 +249,16 @@
     },
     {
       "dishType": "appetizer",
-      "name": "asdasd",
-      "desc": "sadsdasd",
-      "image": "https://res.cloudinary.com/dhlxoefrk/image/upload/v1704272890/j3c25etmflgs4si7zbr9.gif",
+      "name": "cvxcv",
+      "desc": "xcvxcv",
+      "image": "https://res.cloudinary.com/dhlxoefrk/image/upload/v1704308082/rn9yieee3xepsfyffrzr.gif",
       "ingredients": [
-        "asdasd"
+        "xcvxcv"
       ],
       "instructions": [
-        "asdasdasd"
+        "xcvxcv"
       ],
       "id": 11
-    },
-    {
-      "dishType": "appetizer",
-      "name": "",
-      "desc": "",
-      "image": "",
-      "ingredients": "",
-      "instructions": "",
-      "id": 12
     }
   ]
 }

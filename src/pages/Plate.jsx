@@ -57,7 +57,7 @@ const Plate = () => {
 
                         )}
                     </ul>
-                    <Link className="ml-5 first-letter:capitalize transition-all duration-300 p-3 w-50 hover:bg-slate-600 hover:text-white text-center rounded" to={`/edit/${id}`}>Modify</Link>
+                    <Link className="ml-5 first-letter:capitalize transition-all duration-300 p-3 w-50 hover:bg-slate-600 bg-slate-500 hover:text-white text-center rounded" to={`/edit/${id}`}>Modify</Link>
                 </div>
                 </div>
         </div>
