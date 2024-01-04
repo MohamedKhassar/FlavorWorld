@@ -1,6 +1,6 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+// import axios from "axios";
+// import { useEffect, useState } from "react";
+import { Link, useNavigate, useParams } from "react-router-dom";
 const Plate = () => {
     const id = useParams().id
     const [plate, setPlate] = useState({})
@@ -55,7 +55,7 @@ const Plate = () => {
 
                         )}
                     </ul>
-                    <Link className="ml-5 first-letter:capitalize transition-all duration-300 p-3 w-50 hover:bg-slate-600 hover:text-white text-center rounded" to={`/edit/${id}`}>Modify</Link>
+                    <Link className="ml-5 first-letter:capitalize transition-all duration-300 p-3 w-50 hover:bg-slate-600 bg-slate-500 hover:text-white text-center rounded" to={`/edit/${id}`}>Modify</Link>
                 </div>
                 </div>
         </div>
