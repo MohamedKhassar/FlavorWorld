@@ -33,9 +33,7 @@ const Plate = () => {
             <div className=" bg-slate-100 p-6 m-6 rounded-xl flex justify-around">
                 <div>
                     <img src={plate.image} className="w-96 object-cover rounded-md h-96 my-14" alt="" />
-                    <div>
-                        
-                    </div>
+                    
                 </div>
                 <div className="flex flex-col gap-10">
                     <div className="w-fit grid gap-y-2" >
@@ -55,7 +53,13 @@ const Plate = () => {
 
                         )}
                     </ul>
-                    <Link className="ml-5 first-letter:capitalize transition-all duration-300 p-3 w-50 hover:bg-slate-600 hover:text-white text-center rounded" to={`/edit/${id}`}>Modify</Link>
+                    <div className="flex flex-row gap-6 w-full">
+                        <button className="w-1/2 bg-red-400 hover:bg-red-700 hover:text-white p-2 rounded capitalize" onClick={handelDelete}>
+                            delete
+                        </button>
+                    
+                    <Link className="p-2 bg-blue-400 hover:bg-blue-700 first-letter:capitalize transition-all duration-300 w-1/2  hover:text-white text-center rounded" to={`/edit/${id}`}>Modify</Link>
+                    </div>
                 </div>
                 </div>
         </div>

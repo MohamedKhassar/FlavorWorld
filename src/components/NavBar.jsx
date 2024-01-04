@@ -2,8 +2,10 @@ import Aos from "aos";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { FaXmark , FaBars } from "react-icons/fa6";
 
 const NavBar = () => {
+    const [isMenuOpen,setIsMenuOpen] = useState(false);
     const [lastBtn, setBtn] = useState(null)
     const [isHidden, setIsHidden] = useState(false)
     const [isFalse, setIsFalse] = useState(false)
@@ -18,7 +20,9 @@ const NavBar = () => {
         instructions: "",
 
     })
-
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    }
 
     const handelClick = (e) => {
         if (lastBtn == null) {
@@ -92,17 +96,29 @@ const NavBar = () => {
     return (
         <div className="text-xl transition-all duration-300 px-14 flex justify-between items-center top-0 bg-[rgb(255,242,213,.7)] w-full fixed p-2 z-10 h-min">
             <Link to="/"><img src="/img/logo.png" className="w-20" alt="" /></Link>
-            <div className="flex gap-x-11">
+            <div className="gap-x-11 hidden md:flex ">
                 <Link to="/all-plates"><div className="first-letter:capitalize transition-all duration-300 p-2 hover:bg-slate-600 hover:text-white rounded" onClick={handelClick}>all the plates</div></Link>
                 <Link to="/"><div className="first-letter:capitalize transition-all duration-300 p-2 hover:bg-slate-600 hover:text-white rounded" onClick={handelClick}>by category</div></Link>
             </div>
             <div>
                 <button className="first-letter:capitalize transition-all duration-300 p-3 w-16 hover:bg-slate-600 hover:text-white rounded" onClick={() => setIsHidden(!isHidden)}>add</button>
             </div>
-            <div className={`pb-16 absolute top-24  left-0 backdrop-blur-sm bg-black/30 h-screen w-screen ${isHidden == false ? "hidden" : "flex"} flex-col justify-center items-center gap-5`} data-aos="zoom-in">
-                <form className="w-[90%] h-[80%] gird grid-cols-1 p-6 justify-center items-center bg-slate-100" >
-                    <div className="grid-cols-1 grid h-[80%]">
-                        <div className="flex h-[80%]">
+
+            <div className="md:hidden">
+                     <button onClick={toggleMenu} className="text-NeutralDGrey focus:outline-none focus:text-gray-500">
+                        {
+                            isMenuOpen ? (<FaXmark className="h-6 w-6 "/>) : (<FaBars className="h-6 w-6 "/>)
+                        }
+                     </button>
+                </div>
+                <div className={`${isMenuOpen ? "fixed top-[100px] left-0 right-0  text-center block bg-[rgb(255,242,213,.7)]" : "hidden"}`}>
+                <Link to="/all-plates"><div className="first-letter:capitalize transition-all duration-300 p-2 hover:bg-slate-600 hover:text-white rounded" onClick={handelClick}>all the plates</div></Link>
+                <Link to="/"><div className="first-letter:capitalize transition-all duration-300 p-2 hover:bg-slate-600 hover:text-white rounded" onClick={handelClick}>by category</div></Link>
+              </div>    
+            <div className={`pb-16 mt-0 absolute top-24  left-0 backdrop-blur-sm bg-black/30 h-screen w-screen ${isHidden == false ? "hidden" : "flex"} flex-col justify-start items-center gap-2`} data-aos="zoom-in">
+                <form className="w-[90%] h-[70%] grid grid-cols-1  " >
+                    <div className="grid-cols-1 grid h-[90%]">
+                        <div className="flex h-[90%]">
 
                             <div className="w-full">
 
@@ -143,9 +159,9 @@ const NavBar = () => {
 
                         </div>
                     </div>
-                    <div className="grid grid-cols-1 justify-center w-full">
+                    <div className=" mt-2 grid grid-cols-1 justify-center w-full">
 
-                    <button className="my-8 p-3 bg-green-700 hover:bg-green-800 transition-all rounded-md " onClick={handelSave}>save</button>
+                    <button className="text-white  p-3 bg-green-400 hover:bg-green-700 transition-all rounded-md " onClick={handelSave}>save</button>
                     </div>
                 </form>
             </div>

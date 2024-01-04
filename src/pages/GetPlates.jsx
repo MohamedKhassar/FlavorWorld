@@ -32,7 +32,7 @@ const GetPlates = () => {
                             <p className="capitalize text-start"><b>description :<br /><br /> </b>{p.desc}</p>
                         </div>
                     </Link>
-                )}
+                ).reverse()}
             </div>
         </div>
     );
