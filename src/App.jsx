@@ -21,7 +21,12 @@ export default function App() {
     <BrowserRouter>
       <NavBar/>
         <Routes>
-          <Route path="/" element={<Home/>}/>
+          <Route path="/" exact element={<Home/>}/>
+          <Route path="/all-plates" exact element={<GetPlates />}/>
+          <Route path="/dish/:type" element={<Dish/>}/>
+          <Route path="/:id" element={<Plate/>}/>
+          <Route path="/edit/:id" element={<Edit />}/>
+          <Route path="*" element={<h1>check the route</h1>}/>
         </Routes>
     </BrowserRouter>
   )

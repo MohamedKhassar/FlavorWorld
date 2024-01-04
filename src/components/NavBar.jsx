@@ -85,16 +85,16 @@ const NavBar = () => {
             <div>
                 <button className="first-letter:capitalize transition-all duration-300 p-3 w-16 hover:bg-slate-600 hover:text-white rounded" onClick={() => setIsHidden(!isHidden)}>add</button>
             </div>
-            <div className={`pb-16 absolute top-24 left-0 backdrop-blur-sm bg-black/30 h-screen w-screen ${isHidden == false ? "hidden" : "flex"} flex-col justify-center items-center gap-5`} data-aos="zoom-in">
-                <form className="w-1/2" >
-                    <div className="grid grid-cols-1">
-                        <div className="flex gap-x-5 ">
+            <div className={`pb-16 absolute top-24  left-0 backdrop-blur-sm bg-black/30 h-screen w-screen ${isHidden == false ? "hidden" : "flex"} flex-col justify-center items-center gap-5`} data-aos="zoom-in">
+                <form className="w-[90%] h-[80%] gird grid-cols-1 p-6 justify-center items-center bg-slate-100" >
+                    <div className="grid-cols-1 grid h-[80%]">
+                        <div className="flex h-[80%]">
 
                         <div className="w-full">
 
                             <label htmlFor="countries" className="block mb-2 text-sm font-medium text-gray-900 ">Select an option</label>
                             <select id="countries" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 capitalize outline-none" onChange={(e) => setData({ ...data, dishType: e.target.value })}>
-                                <option >Choose a category</option>
+                                <option  disabled>Choose a category</option>
                                 <option defaultValue="appetizer">appetizer</option>
                                 <option defaultValue="main">main course</option>
                                 <option defaultValue="dessert">dessert</option>
@@ -131,7 +131,7 @@ const NavBar = () => {
                     </div>
                     <div className="grid grid-cols-1 justify-center w-full">
 
-                    <button className="my-8 p-3 bg-green-700 hover:bg-green-800 transition-all rounded-md " onClick={handelSave}>save</button>
+                    <button className="my-8 p-3 bg-green-700 text-white hover:bg-green-800 transition-all rounded-md " onClick={handelSave}>save</button>
                     </div>
                 </form>
             </div>

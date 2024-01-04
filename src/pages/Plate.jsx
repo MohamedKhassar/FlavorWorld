@@ -30,13 +30,11 @@ const Plate = () => {
 
     return (
         <div className="my-32" data-aos="fade-up">
-            <div className="flex justify-around">
+            <div className=" bg-slate-100 p-6 m-6 rounded-xl flex justify-around">
                 <div>
                     <img src={plate.image} className="w-96 object-cover rounded-md h-96 my-14" alt="" />
                     <div>
-                        <button className="bg-red-500 hover:bg-red-600 p-2 rounded capitalize" onClick={handelDelete}>
-                            delete
-                        </button>
+                        
                     </div>
                 </div>
                 <div className="flex flex-col gap-10">
@@ -57,7 +55,10 @@ const Plate = () => {
 
                         )}
                     </ul>
-                    <Link className="ml-5 first-letter:capitalize transition-all duration-300 p-3 w-50 hover:bg-slate-600 hover:text-white text-center rounded" to={`/edit/${id}`}>Modify</Link>
+                    <button className="bg-red-500 hover:bg-red-600 hover:text-white p-3 w-50 rounded capitalize" onClick={handelDelete}>
+                            delete
+                        </button>
+                    <Link className=" bg-blue-400 hover:bg-blue-500 first-letter:capitalize transition-all duration-300 p-3 w-50 hover:text-white text-center rounded" to={`/edit/${id}`}>Modify</Link>
                 </div>
                 </div>
         </div>
