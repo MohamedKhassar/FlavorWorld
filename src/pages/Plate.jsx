@@ -21,6 +21,7 @@ const Plate = () => {
         getOne()
     }, [id])
 
+    
     const handelDelete = () => {
         const confirmDelete = window.confirm('Are you sure to delete this plate?')
         if (confirmDelete) {
