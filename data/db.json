@@ -3,14 +3,10 @@
     {
       "id": 1,
       "dishType": "appetizer",
-      "name": "Caprese Salad",
+      "name": "Caprese Salad new",
       "image": "/img/caprese_salad.jpg",
       "ingredients": [
-        "2 large tomatoes, sliced",
-        "8 ounces fresh mozzarella, sliced",
-        "1/2 cup fresh basil leaves",
-        "3 tablespoons balsamic glaze",
-        "Salt and pepper to taste"
+        "2 large tomatoes, sliced,8 ounces fresh mozzarella, sliced,1/2 cup fresh basil leaves,3 tablespoons balsamic glaze,Salt and pepper to tastedfdfdfdfd"
       ],
       "instructions": [
         "Arrange tomato and mozzarella slices on a serving platter.",
@@ -22,7 +18,7 @@
     {
       "id": 2,
       "dishType": "main",
-      "name": "Chicken Alfredo Pasta",
+      "name": "Chicken Alfredo Pasta new data",
       "image": "/img/chicken_alfredo_pasta.jpg",
       "ingredients": [
         "8 ounces fettuccine pasta",
@@ -141,35 +137,6 @@
       ]
     },
     {
-      "id": 7,
-      "dishType": "main",
-      "name": "Mushroom Risotto",
-      "image": "/img/mushroom_risotto.jpg",
-      "ingredients": [
-        "1 cup Arborio rice",
-        "4 cups vegetable broth",
-        "1 cup mushrooms, sliced",
-        "1/2 cup dry white wine",
-        "1/2 cup grated Parmesan cheese",
-        "1 small onion, finely chopped",
-        "2 cloves garlic, minced",
-        "2 tablespoons butter",
-        "2 tablespoons olive oil",
-        "Salt and pepper to taste",
-        "Fresh parsley for garnish"
-      ],
-      "instructions": [
-        "In a saucepan, heat the vegetable broth and keep it warm over low heat.",
-        "In a large skillet, heat olive oil and 1 tablespoon butter over medium heat. Add onions and garlic, sauté until softened.",
-        "Add Arborio rice to the skillet and stir to coat with oil. Cook for 2-3 minutes until the rice is lightly toasted.",
-        "Pour in the white wine and cook until it is mostly evaporated.",
-        "Begin adding warm vegetable broth, one ladle at a time, stirring frequently. Allow the liquid to be absorbed before adding the next ladle.",
-        "When the rice is almost tender, stir in the mushrooms. Continue adding broth and stirring until the rice is creamy and fully cooked.",
-        "Stir in Parmesan cheese and remaining butter. Season with salt and pepper.",
-        "Garnish with fresh parsley before serving."
-      ]
-    },
-    {
       "id": 8,
       "dishType": "dessert",
       "name": "Apple Pie",
@@ -249,14 +216,14 @@
     },
     {
       "dishType": "appetizer",
-      "name": "cvxcv",
+      "name": "new name",
       "desc": "xcvxcv",
       "image": "https://res.cloudinary.com/dhlxoefrk/image/upload/v1704308082/rn9yieee3xepsfyffrzr.gif",
       "ingredients": [
-        "xcvxcv"
+        "sddsfsdfsdzxcxzcxc"
       ],
       "instructions": [
-        "xcvxcv"
+        "newzxcdsdf"
       ],
       "id": 11
     }

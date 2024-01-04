@@ -71,7 +71,7 @@ const NavBar = () => {
                     image: "",
                     ingredients: "",
                     instructions: "",
-                })).then(nav("/all-plates"))
+                })).then(window.location.reload())
 
             }
 
@@ -144,7 +144,7 @@ const NavBar = () => {
                         </div>
                     </div>
                     <div className="mt-3 grid grid-cols-1 justify-center w-full">
-                        <p className={`text-red-600 ${!isFalse && "hidden"}`}>please fill all the field</p>
+                        <p className={`text-red-600 ${!isFalse && "hidden"}`}>please fill all the fields</p>
                         <button className={`my-8 p-3 bg-green-700 hover:bg-green-800 transition-all rounded-md ${isLoading&&"cursor-wait"} `} disabled={isLoading&&true} onClick={handelSave}>save</button>
                     </div>
                 </form>
