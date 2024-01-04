@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react'
-import UploadImg from "../pages/UploadImg";
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import axios from 'axios';
+import Postdata from './Postdata';
 const Home = () => {
     useEffect(() => {
         AOS.init({
@@ -14,7 +15,8 @@ const Home = () => {
     }, [])
   
     const [ data, setData] = useState([])
-  useEffect(() => {
+    
+    
     const GetData = async () => {
         try {
             const res = await axios.get("http://localhost:3000/recipes");
@@ -24,44 +26,39 @@ const Home = () => {
         }
     }
    
+const PutData = async (id) => {
+    try {
+       
+        const recipe = { name: "fruit Salad", dishType: "dessert", };
+        const res = await axios.put(`http://localhost:3000/recipes/${id}`, recipe);
+        setData(res.data)  
+    } catch (error) {
+        console.log(error)
+    }
+}
+const DeleteData = async (id) => {
+    try {
+        
+        const confirmDelete = window.confirm("Are you sure for this delete")
+        if (confirmDelete) {
+          await axios.delete(`http://localhost:3000/recipes/${id}`);  
+          GetData();
+        }
+       
+        
+        
+        
+    } catch (error) {
+        console.log(error)
+    }
+} 
+  useEffect(() => {
 
     GetData();
-    
-  
+
   }, [])
 
-//    const PostData = async () => {
-//         try {
-//             const recipe = { name: "fruit Salad", dishType: "dessert", };
-//             const res = await axios.post("http://localhost:3000/recipes", recipe);
-//             setData(res.data)  
-//         } catch (error) {
-//             console.log(error)
-//         }
-//     }
-    const PutData = async (id) => {
-            try {
-               
-                const recipe = { name: "fruit Salad", dishType: "dessert", };
-                const res = await axios.put(`http://localhost:3000/recipes/${id}`, recipe);
-                setData(res.data)  
-            } catch (error) {
-                console.log(error)
-            }
-        }
-        const DeleteData = async (id) => {
-            try {
-                
-                
-                const res = await axios.delete(`http://localhost:3000/recipes/${id}`);
-                
-                const data = data.filter(item => item.id !== id);  
-
-                setData(res.data)  
-            } catch (error) {
-                console.log(error)
-            }
-        }    
+   
   
       
     return (
@@ -109,12 +106,12 @@ const Home = () => {
                     
                 </div>
 
-                <section className="grid grid-cols-2 gap-4 m-4">
+                <section className="grid grid-cols-1 md:grid-cols-2 gap-4 m-4">
                 {data.map(data => 
-                <div key={data.id} className="bg-slate-300 p-4">
+                <div key={data.id} className="h-fit bg-slate-300 p-4">
                 <h1 className="text-center font-bold font-[Inter] bg-gray-400 text-white">{data.name}</h1>
                 <p className="text-center">{data.dishType}</p>
-                <img src={data.image} />
+                <img className="w-[100%] h-[50%]" src={data.image} />
                 <h4 className=" text-pink-300 text-center">Description</h4>
                 <p className=" text-justify font-[Inter] p-2">{data.desc}</p>
                 <h4 className=" text-blue-700 text-center">Ingrediants</h4>
@@ -122,8 +119,8 @@ const Home = () => {
                 <h4 className=" text-lime-700 text-center">Instructions</h4>
                 <p className="font-[Inter]">{data.instructions}</p>
                 <div className="flex flex-row justify-center">
-                    <button className="bg-blue-400 p-4 m-2 rounded-md" onClick={PutData(data.id)} >Update</button>
-                    <button className="bg-red-400 p-4 m-2 rounded-md" onClick={DeleteData(data.id)}>Delete</button>
+                    <button className="bg-blue-400 p-4 m-2 rounded-md" onClick={() => PutData(data.id)} >Update</button>
+                    <button className="bg-red-400 p-4 m-2 rounded-md" onClick={() => DeleteData(data.id)}>Delete</button>
                  </div>
                 </div>
                 )} 
@@ -131,7 +128,8 @@ const Home = () => {
                   
                     
                 </section> 
-                <UploadImg/>
+               <Postdata/>
+               
         </div>
     )
 }
