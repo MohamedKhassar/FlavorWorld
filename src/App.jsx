@@ -4,6 +4,7 @@ import Welcome from "./components/Welcome"
 import { useEffect } from "react"
 import Aos from "aos"
 import Plate from "./pages/Plate"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 export default function App() {
   useEffect(() => {
     Aos.init({
