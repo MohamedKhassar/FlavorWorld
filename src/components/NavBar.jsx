@@ -1,16 +1,15 @@
 import Aos from "aos";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FaXmark , FaBars } from "react-icons/fa6";
 
 const NavBar = () => {
     const [isMenuOpen,setIsMenuOpen] = useState(false);
     const [lastBtn, setBtn] = useState(null)
     const [isHidden, setIsHidden] = useState(false)
-    const [isFalse, setIsFalse] = useState(false)
+    const [isDisplay, setIsDisplay] = useState(false)
     const [isLoading,setIsLoading]=useState(false)
-    const nav = useNavigate()
     const [data, setData] = useState({
         dishType: "",
         name: "",
@@ -65,7 +64,7 @@ const NavBar = () => {
         try {
             if (data.image == "" || data.desc == "" || data.dishType == "" || data.ingredients == "" || data.instructions == "") {
 
-                setIsFalse(true)
+                setIsDisplay(true)
             } else {
 
                 await axios.post("http://localhost:3000/recipes", data).then(setIsHidden(false)).then(setData({
@@ -160,8 +159,10 @@ const NavBar = () => {
                         </div>
                     </div>
                     <div className=" mt-2 grid grid-cols-1 justify-center w-full">
-
-                    <button className="text-white  p-3 bg-green-400 hover:bg-green-700 transition-all rounded-md " onClick={handelSave}>save</button>
+                        <p className={`text-red-700 ${!isDisplay && "hidden"}`}>please fill the fields</p>
+                        <button className={`text-white  p-3 bg-green-400 hover:bg-green-700 transition-all rounded-md ${isLoading && "cursor-wait"}`}
+                        disabled={isLoading && true}
+                            onClick={handelSave}>save</button>
                     </div>
                 </form>
             </div>
