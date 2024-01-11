@@ -1,13 +1,16 @@
 import Aos from "aos";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { FaXmark , FaBars } from "react-icons/fa6";
 
 const NavBar = () => {
+    const [isMenuOpen,setIsMenuOpen] = useState(false);
     const [lastBtn, setBtn] = useState(null)
     const [isHidden, setIsHidden] = useState(false)
-    const [isDisplay, setIsDisplay] = useState(false)
-    const [isLoading, setIsLoading] = useState(false)
+    const [isFalse, setIsFalse] = useState(false)
+    const [isLoading,setIsLoading]=useState(false)
+    const nav = useNavigate()
     const [data, setData] = useState({
         dishType: "",
         name: "",
@@ -17,7 +20,9 @@ const NavBar = () => {
         instructions: "",
 
     })
-
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    }
 
     const handelClick = (e) => {
         if (lastBtn == null) {
@@ -60,7 +65,7 @@ const NavBar = () => {
         try {
             if (data.image == "" || data.desc == "" || data.dishType == "" || data.ingredients == "" || data.instructions == "") {
 
-                setIsDisplay(true)
+                setIsFalse(true)
             } else {
 
                 await axios.post("http://localhost:3000/recipes", data).then(setIsHidden(false)).then(setData({
@@ -91,26 +96,38 @@ const NavBar = () => {
     return (
         <div className="text-xl transition-all duration-300 px-14 flex justify-between items-center top-0 bg-[rgb(255,242,213,.7)] w-full fixed p-2 z-10 h-min">
             <Link to="/"><img src="/img/logo.png" className="w-20" alt="" /></Link>
-            <div className="flex gap-x-11">
+            <div className="gap-x-11 hidden md:flex ">
                 <Link to="/all-plates"><div className="first-letter:capitalize transition-all duration-300 p-2 hover:bg-slate-600 hover:text-white rounded" onClick={handelClick}>all the plates</div></Link>
                 <Link to="/"><div className="first-letter:capitalize transition-all duration-300 p-2 hover:bg-slate-600 hover:text-white rounded" onClick={handelClick}>by category</div></Link>
             </div>
             <div>
                 <button className="first-letter:capitalize transition-all duration-300 p-3 w-16 hover:bg-slate-600 hover:text-white rounded" onClick={() => setIsHidden(!isHidden)}>add</button>
             </div>
-            <div className={`pb-16 absolute top-24 left-0 backdrop-blur-sm bg-black/30 h-screen w-screen ${isHidden == false ? "hidden" : "flex"} flex-col justify-center items-center gap-5`} data-aos="zoom-in">
-                <form className="w-1/2" >
-                    <div className="grid grid-cols-1">
-                        <div className="flex gap-x-5 ">
+
+            <div className="md:hidden">
+                     <button onClick={toggleMenu} className="text-NeutralDGrey focus:outline-none focus:text-gray-500">
+                        {
+                            isMenuOpen ? (<FaXmark className="h-6 w-6 "/>) : (<FaBars className="h-6 w-6 "/>)
+                        }
+                     </button>
+                </div>
+                <div className={`${isMenuOpen ? "fixed top-[100px] left-0 right-0  text-center block bg-[rgb(255,242,213,.7)]" : "hidden"}`}>
+                <Link to="/all-plates"><div className="first-letter:capitalize transition-all duration-300 p-2 hover:bg-slate-600 hover:text-white rounded" onClick={handelClick}>all the plates</div></Link>
+                <Link to="/"><div className="first-letter:capitalize transition-all duration-300 p-2 hover:bg-slate-600 hover:text-white rounded" onClick={handelClick}>by category</div></Link>
+              </div>    
+            <div className={`pb-16 mt-0 absolute top-24  left-0 backdrop-blur-sm bg-black/30 h-screen w-screen ${isHidden == false ? "hidden" : "flex"} flex-col justify-start items-center gap-2`} data-aos="zoom-in">
+                <form className="w-[90%] h-[70%] grid grid-cols-1  " >
+                    <div className="grid-cols-1 grid h-[90%]">
+                        <div className="flex h-[90%]">
 
                             <div className="w-full">
 
                                 <label htmlFor="countries" className="block mb-2 text-sm font-medium text-gray-900 ">Select an option</label>
                                 <select id="countries" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 capitalize outline-none" onChange={(e) => setData({ ...data, dishType: e.target.value })}>
                                     <option >Choose a category</option>
-                                    <option value="appetizer">appetizer</option>
-                                    <option value="main">main course</option>
-                                    <option value="dessert">dessert</option>
+                                    <option defaultValue="appetizer">appetizer</option>
+                                    <option defaultValue="main">main course</option>
+                                    <option defaultValue="dessert">dessert</option>
                                 </select>
 
                             </div>
@@ -142,9 +159,9 @@ const NavBar = () => {
 
                         </div>
                     </div>
-                    <div className="mt-3 grid grid-cols-1 justify-center w-full">
-                        <p className={`text-red-600 ${!isDisplay && "hidden"}`}>please fill all the fields</p>
-                        <button className={`my-8 p-3 bg-green-700 hover:bg-green-800 transition-all rounded-md ${isLoading && "cursor-wait"} `} disabled={isLoading && true} onClick={handelSave}>save</button>
+                    <div className=" mt-2 grid grid-cols-1 justify-center w-full">
+
+                    <button className="text-white  p-3 bg-green-400 hover:bg-green-700 transition-all rounded-md " onClick={handelSave}>save</button>
                     </div>
                 </form>
             </div>
