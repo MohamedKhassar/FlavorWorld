@@ -5,20 +5,18 @@ function Edit() {
     // const nav = useNavigate();
     const { id } = useParams();
     // console.log(id);
-    const [isLoading, setIsLoading] = useState()
     const nav = useNavigate()
     const [uplate, setUplate] = useState({
         image: "",
-        name: '',
+        name: "",
         ingredients: [],
         instructions: []
     })
     const updatePlates = async () => {
         await axios.put(`http://localhost:3000/recipes/${id}`, uplate)
-            .then(response => {
-                console.log('Le plat a été mis à jour avec succès !');
-                console.log(response.data); // Afficher la réponse du serveur si nécessaire
-            })
+            .then(
+                console.log('Le plat a été mis à jour avec succès !')
+            )
         nav(`/${id}`)
 
     };
@@ -64,7 +62,7 @@ function Edit() {
                         }} />
                     </div>
                     <div className="flex justify-center mt-4">
-                        <button className={`first-letter:capitalize transition-all duration-300 p-3 hover:bg-slate-600 bg-slate-500 hover:text-white rounded ${isLoading && "cursor-wait"}`} disabled={isLoading && true} onClick={updatePlates}>Update</button>
+                        <button className={`first-letter:capitalize transition-all duration-300 p-3 hover:bg-slate-600 bg-slate-500 hover:text-white rounded `} onClick={updatePlates}>Update</button>
                     </div>
                 </div>
             </div>

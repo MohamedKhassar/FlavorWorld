@@ -14,7 +14,7 @@ const GetPlates = () => {
             }
         }
         getAllPlates()
-    },[])
+    }, [])
 
     return (
         <div className="m-14 flex justify-center items-center gap-12 flex-col text-center" data-aos="fade-up">
@@ -32,7 +32,7 @@ const GetPlates = () => {
                             <p className="capitalize text-start"><b>description :<br /><br /> </b>{p.desc}</p>
                         </div>
                     </Link>
-                )}
+                ).reverse()}
             </div>
         </div>
     );

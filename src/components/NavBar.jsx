@@ -1,14 +1,13 @@
 import Aos from "aos";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
     const [lastBtn, setBtn] = useState(null)
     const [isHidden, setIsHidden] = useState(false)
-    const [isFalse, setIsFalse] = useState(false)
-    const [isLoading,setIsLoading]=useState(false)
-    const nav = useNavigate()
+    const [isDisplay, setIsDisplay] = useState(false)
+    const [isLoading, setIsLoading] = useState(false)
     const [data, setData] = useState({
         dishType: "",
         name: "",
@@ -61,7 +60,7 @@ const NavBar = () => {
         try {
             if (data.image == "" || data.desc == "" || data.dishType == "" || data.ingredients == "" || data.instructions == "") {
 
-                setIsFalse(true)
+                setIsDisplay(true)
             } else {
 
                 await axios.post("http://localhost:3000/recipes", data).then(setIsHidden(false)).then(setData({
@@ -109,9 +108,9 @@ const NavBar = () => {
                                 <label htmlFor="countries" className="block mb-2 text-sm font-medium text-gray-900 ">Select an option</label>
                                 <select id="countries" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 capitalize outline-none" onChange={(e) => setData({ ...data, dishType: e.target.value })}>
                                     <option >Choose a category</option>
-                                    <option defaultValue="appetizer">appetizer</option>
-                                    <option defaultValue="main">main course</option>
-                                    <option defaultValue="dessert">dessert</option>
+                                    <option value="appetizer">appetizer</option>
+                                    <option value="main">main course</option>
+                                    <option value="dessert">dessert</option>
                                 </select>
 
                             </div>
@@ -144,8 +143,8 @@ const NavBar = () => {
                         </div>
                     </div>
                     <div className="mt-3 grid grid-cols-1 justify-center w-full">
-                        <p className={`text-red-600 ${!isFalse && "hidden"}`}>please fill all the fields</p>
-                        <button className={`my-8 p-3 bg-green-700 hover:bg-green-800 transition-all rounded-md ${isLoading&&"cursor-wait"} `} disabled={isLoading&&true} onClick={handelSave}>save</button>
+                        <p className={`text-red-600 ${!isDisplay && "hidden"}`}>please fill all the fields</p>
+                        <button className={`my-8 p-3 bg-green-700 hover:bg-green-800 transition-all rounded-md ${isLoading && "cursor-wait"} `} disabled={isLoading && true} onClick={handelSave}>save</button>
                     </div>
                 </form>
             </div>

@@ -11,7 +11,6 @@ const Plate = () => {
         const getOne = async () => {
             console.log(id);
             try {
-
                 const res = await axios.get(`http://localhost:3000/recipes/${id}`)
                 setPlate(res.data)
             } catch (error) {
@@ -52,14 +51,14 @@ const Plate = () => {
 
                         )}
                         <h1 className="text-2xl capitalize">instructions : </h1>
-                        {plate.ingredients && plate.instructions.map(ing =>
+                        {plate.instructions && plate.instructions.map(ing =>
                             <li className="list-['-'] ml-10 w-[450px] px-1" key={plate.id}>{ing}</li>
 
                         )}
                     </ul>
                     <Link className="ml-5 first-letter:capitalize transition-all duration-300 p-3 w-50 hover:bg-slate-600 bg-slate-500 hover:text-white text-center rounded" to={`/edit/${id}`}>Modify</Link>
                 </div>
-                </div>
+            </div>
         </div>
     );
 }
