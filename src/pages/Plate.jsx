@@ -1,7 +1,7 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
 // import axios from "axios";
 // import { useEffect, useState } from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 const Plate = () => {
     const id = useParams().id
@@ -11,7 +11,6 @@ const Plate = () => {
         const getOne = async () => {
             console.log(id);
             try {
-
                 const res = await axios.get(`http://localhost:3000/recipes/${id}`)
                 setPlate(res.data)
             } catch (error) {
@@ -49,7 +48,7 @@ const Plate = () => {
 
                         )}
                         <h1 className="text-2xl capitalize">instructions : </h1>
-                        {plate.ingredients && plate.instructions.map(ing =>
+                        {plate.instructions && plate.instructions.map(ing =>
                             <li className="list-['-'] ml-10 w-[450px] px-1" key={plate.id}>{ing}</li>
 
                         )}
@@ -62,7 +61,7 @@ const Plate = () => {
                     <Link className="p-2 bg-blue-400 hover:bg-blue-700 first-letter:capitalize transition-all duration-300 w-1/2  hover:text-white text-center rounded" to={`/edit/${id}`}>Modify</Link>
                     </div>
                 </div>
-                </div>
+            </div>
         </div>
     );
 }

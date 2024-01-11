@@ -6,16 +6,17 @@ const Dish = () => {
     const dish = useParams().type
     const [dishData, setData] = useState([])
     useEffect(() => {
-        const getOne = async () => {
+        const getDish = async () => {
             try {
 
                 const res = await axios.get(`http://localhost:3000/recipes?dishType=${dish}`)
+                console.log(res)
                 setData(res.data)
             } catch (error) {
                 console.log(error);
             }
         }
-        getOne()
+        getDish()
     }, [dish])
 
     return (

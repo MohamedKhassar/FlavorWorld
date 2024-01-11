@@ -14,7 +14,7 @@ const GetPlates = () => {
             }
         }
         getAllPlates()
-    },[])
+    }, [])
 
     return (
         <div className="m-14 text-center" data-aos="fade-up">
